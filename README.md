@@ -66,6 +66,8 @@ The project follows the follow steps:
 - Check for null values in Primary Key and Not Null columns
 
 ## Data-Model
+Star Schema is used for this project to tie in the 4 dimension tables with the fact table.
+
 In order to have a holistic view of how many immigrants are coming to each port, we would group the data by the port location. We have two parts of aggregation, starting where immigrants left and their destination. Next we have airports data, each location has multiple types of airports. To have one row represents each location as well as the types of airports, we pivot the table to aggregate how many types of airports each location has. Finally, we join the immigration_port and airport_aggregate tables to have the final table showing how many immigrants arrived at each port and how many airports are in the same location.
 
 ### Fact Table
@@ -170,7 +172,7 @@ Depending on the required time limit, additional nodes may be required and EMR s
 Schedule Airflow DAG to trigger the pipeline everyday at 7am.
 
 ### The database needed to be accessed by 100+ people
-Create a specific IAM for people that needs to access the S3, make sure the S3 bucket is created as a normal and not glacier S3 as that would slow the speed significantly.
+The more people accessing the database the more cpu resources you need to get a fast experience. By using a distributed database you can to improve your replications and partitioning to get faster query results for each user.
 
 ## Set-up
 - Make sure to set up AWS credentials to connect to S3 buckets
