@@ -6,14 +6,14 @@
 Data stored in S3 bucket `s3a://immigration-airport-data/`
 
 The project follows the follow steps:
-1. [Project Scope and Data Source](README.md#Scope of project and Data Source)
+1. [Project Scope and Data Source](README.md#Scope-of-project-and-Data-Source)
 1. [Explore and Assess the Data](README.md#Explore and Assess the Data)
 1. [Data Model](README.md#Data Model)
 1. [ETL to Model the Data]
 1. [Data Quality Check]
 1. Data Dictionary
 
-## Scope of project and Data Source
+## Scope-of-project-and-Data-Source
 
 ### Scope 
 - Aggregate the immigration data by airport in order to find out the relationship between the number of immigrants and the airports.
