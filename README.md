@@ -11,6 +11,7 @@ The project follows the follow steps:
 1. [Data Model](README.md#Data Model)
 1. [ETL to Model the Data]
 1. [Data Quality Check]
+1. Data Dictionary
 
 ## Scope of project and Data Source
 
